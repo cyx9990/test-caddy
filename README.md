@@ -8,7 +8,9 @@
 
 ## 镜像
 
-docker pull yobasystems/alpine-caddy。登录网站后,点击下面按钮部署.
+docker pull yobasystems/alpine-caddy。
+
+登录网站后,点击下面按钮部署.
 
 ### 服务端
 
