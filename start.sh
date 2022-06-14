@@ -3,7 +3,10 @@
 # configs
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/index-head.html -O /usr/share/caddy/index.html
-wget -qO- $ConfigCaddyfile | sed -e "1c :$PORT" > /etc/caddy/Caddyfile
+#wget -qO- $ConfigCaddyfile | sed -e "1c :$PORT" > /etc/caddy/Caddyfile
+wget $ConfigCaddyfile -O /etc/caddy/caddy.txt
+sed -e "1c :$PORT" /etc/caddy/caddy.txt > /etc/caddy/Caddyfile
+
 echo "this is test3" >> /usr/share/caddy/index.html
 cat /etc/caddy/Caddyfile >> /usr/share/caddy/index.html
 echo "----------" >> /usr/share/caddy/index.html
