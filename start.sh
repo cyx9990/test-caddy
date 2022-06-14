@@ -8,8 +8,8 @@ wget $ConfigCaddyfile -O /etc/caddy/caddy.txt
 sed -e "1c :$PORT" /etc/caddy/caddy.txt > /etc/caddy/Caddyfile
 
 echo "this is test3" >> /usr/share/caddy/index.html
-cat /etc/caddy/Caddyfile >> /usr/share/caddy/index.html
+sed -e "s/^/<p>&/g" /etc/caddy/Caddyfile >> /usr/share/caddy/index.html
 echo "----------" >> /usr/share/caddy/index.html
-echo $PORT >> /usr/share/caddy/index.html
+echo $PWD >> /usr/share/caddy/index.html
 
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
