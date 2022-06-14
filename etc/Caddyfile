@@ -13,9 +13,9 @@ basicauth /65654109-030a-4fbe-916b-34a8448032ae/* {
     65654109-030a-4fbe-916b-34a8448032ae JDJhJDE0JDNNMGFLWUxUWkE1dUxJeEs5MURIWk96Yy82YlU3c0xOZWxGYlFBODdpcW50YlVxeFV4T095
 }
 
-@websocket_xray_vmess {
+@websocket_xms {
     header Connection *Upgrade*
     header Upgrade websocket
-    path /65654109-030a-4fbe-916b-34a8448032ae-vmess
+    path /65654109-030a-4fbe-916b-34a8448032ae-xms
 }
-reverse_proxy @websocket_xray_vmess unix//etc/caddy/vmess
+reverse_proxy @websocket_xms unix//etc/caddy/xms
