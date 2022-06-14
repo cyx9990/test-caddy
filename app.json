@@ -18,18 +18,6 @@
         "ConfigCaddyfile": {
             "description": "CADDY的配置",
             "value": "https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/Caddyfile"
-        },
-        "ConfigJson": {
-            "description": "这个是JSON文件",
-            "value": "https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/test.json"
-        },
-        "encSS": {
-            "description": "这是SS的",
-            "value": "chacha20-ietf-poly1305"
-        },
-        "StoreFiles": {
-            "description": "自定义网络地址读取存储文件列表，这个好像没啥用",
-            "value": "https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/StoreFiles"
         }
     },
     "website": "https://github.com/cyx9990/test-caddy",
