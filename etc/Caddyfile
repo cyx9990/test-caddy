@@ -9,13 +9,13 @@ header {
     Referrer-Policy no-referrer-when-downgrade
 }
 
-basicauth /$AUUID/* {
-    $AUUID $MYUUID-HASH
+basicauth /65654109-030a-4fbe-916b-34a8448032ae/* {
+    65654109-030a-4fbe-916b-34a8448032ae JDJhJDE0JDNNMGFLWUxUWkE1dUxJeEs5MURIWk96Yy82YlU3c0xOZWxGYlFBODdpcW50YlVxeFV4T095
 }
 
-@websocket_xm {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-vmess
+@websocket_xray_vmess {
+    header Connection *Upgrade*
+    header Upgrade websocket
+    path /65654109-030a-4fbe-916b-34a8448032ae-vmess
 }
-reverse_proxy @websocket_xm unix//etc/caddy/xm
+reverse_proxy @websocket_xray_vmess unix//etc/caddy/vmess
