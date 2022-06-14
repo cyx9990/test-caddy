@@ -7,7 +7,7 @@
             "description": "哈哈，点击Deploy app开始部署",
             "value": "这是一个测试 CADDY 的"
         },
-        "PWD": {
+        "PWDX": {
             "description": "PASSWORD",
             "value": "65654109-030a-4fbe-916b-34a8448032ae"
         },
