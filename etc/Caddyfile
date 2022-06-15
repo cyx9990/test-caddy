@@ -10,7 +10,7 @@ header {
 }
 
 basicauth /$AUUID/* {
-    $AUUID JDJhJDE0JDNNMGFLWUxUWkE1dUxJeEs5MURIWk96Yy82YlU3c0xOZWxGYlFBODdpcW50YlVxeFV4T095
+    $AUUID $MYUUID-HASH
 }
 
 @websocket_xms {
