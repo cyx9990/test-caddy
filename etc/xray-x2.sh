@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "下面的改动应该没有必要，woiden安装之前，应先设置 dns64，然后就没有问题了"
 echo "woiden上有问题，github的东西下不来做了点改动"
 echo "先下载 curl -o acme.zip https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/acme.sh-3.0.4.zip"
 echo "解压 unzip acme.zip"
