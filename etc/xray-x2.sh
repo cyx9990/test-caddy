@@ -1295,16 +1295,16 @@ install() {
 	[[ $TLS == "true" || $XTLS == "true" ]] && getCert
 	configNginx
 	yellow "安装Xray..."
-	getVersion
-	RETVAL="$?"
-	if [[ $RETVAL == 0 ]]; then
-		yellow "Xray最新版 ${CUR_VER} 已经安装"
-	elif [[ $RETVAL == 3 ]]; then
-		exit 1
-	else
-		yellow "安装Xray ${NEW_VER} ，架构$(archAffix)"
+	#getVersion
+	#RETVAL="$?"
+	#if [[ $RETVAL == 0 ]]; then
+	#	yellow "Xray最新版 ${CUR_VER} 已经安装"
+	#elif [[ $RETVAL == 3 ]]; then
+	#	exit 1
+	#else
+	#	yellow "安装Xray ${NEW_VER} ，架构$(archAffix)"
 		installXray
-	fi
+	#fi
 	configXray
 	setSelinux
 	installBBR
