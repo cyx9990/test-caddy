@@ -4,7 +4,7 @@ echo "woiden上有问题，github的东西下不来做了点改动"
 echo "先下载 curl -o acme.zip https://raw.githubusercontent.com/cyx9990/test-caddy/main/etc/acme.sh-3.0.4.zip"
 echo "解压 unzip acme.zip"
 echo "重全名 mv acme.sh-3.0.4 acme.sh"
-echo "后边xray的地址我也改了"
+echo "后边xray的地址我也改了，把xray版本检测也都去了，只管安装，更新就不管了"
 
 
 red() {
